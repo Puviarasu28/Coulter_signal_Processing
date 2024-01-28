@@ -10,11 +10,11 @@ from yolov2_loss import custom_loss
 import matplotlib.pyplot as plt
 
 # HYPERPARAMS:
-LEARNING_RATE = 1e-4
+LEARNING_RATE = 2e-4
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 BATCH_SIZE = 128
 VAL_BATCH_SIZE = 128
-WEIGHT_DECAY = 0.0001
+WEIGHT_DECAY = 0.0005
 EPOCHS = 30
 
 def main():
